@@ -1,0 +1,36 @@
+# Keil 用户配置和编译结果
+*.uvguix.*
+*.suo
+*.user
+*.o
+*.d
+*.crf
+*.axf
+*.map
+*.lnp
+*.dep
+*.lst
+*.build_log.htm
+
+# Keil 输出目录
+**/MDK-ARM/ECAT/
+
+# 调试日志
+JLinkLog.txt
+*.log
+
+# Visual Studio / TwinCAT 缓存
+.vs/
+**/.vs/
+
+# 临时目录
+tmp/
+**/tmp/
+
+# 操作系统文件
+Thumbs.db
+.DS_Store
+
+# STM32 官方手册：建议在 README 中放官方下载链接
+/rm0440-stm32g4-series-reference-mauanl.pdf
+/STM32G474xx DS.pdf

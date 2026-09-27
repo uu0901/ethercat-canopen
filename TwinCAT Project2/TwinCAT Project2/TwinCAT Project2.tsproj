@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.24">
+	<ImageDatas>
+		<ImageData Id="1000">424df8010000000000003600000028000000100000000e0000000100100000000000c2010000120b0000120b00000000000000000000ff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7f397b8c75c6748474a5744a75947aff7fff7fff7fff7fff7fff7fff7fff7f8b7521746374847420706374837441746374ff7fff7fff7fff7fff7fff7fff7f00708374a47400709c7fa47463744274e674ff7fff7fff7fff7fff7fff7fff7fff7f00702074cd79ff7fff7f00740070ff7fff7fff7fff7fff7fff7f5a7fff7fff7f947a0070ff7fff7fff7f0070d67aff7fff7fd67aff7fff7fff7f0070ff7fff7f00709c7fff7fff7fcd796274ff7fff7fff7f00705a7fff7fff7f6274e774ad754975ff7fff7fff7f0070ff7fff7fff7fa5740875ff7fff7fff7f497541740070ff7fff7fff7f0070187fff7fff7ff77a2174ff7fff7fff7fff7f937a217400709c7fff7f317a0070c674ff7fff7f00705a7fff7fff7fff7fff7fff7f087541740070397b0070a4742170ef790775297dff7fff7fff7fff7fff7fff7fff7fac79007000708474a47484742170a57cff7f7b6fff7fff7fff7fff7fff7fff7fff7f397f8b75c6748474c574ac75ff7fd6561863ff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7fff7f0000</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{AB606660-D1B0-C40A-2519-3EF6D35EC1C5}" Target64Bit="true" ShowHideConfigurations="#x6">
+		<Io>
+			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="192.168.18.1.2.1" RemoteName="设备 1 (EtherCAT)" InfoImageId="2">
+				<Name>设备 1 (EtherCAT)</Name>
+				<AddressInfo>
+					<Pnp>
+						<DeviceDesc>��̫�� 2 (Realtek USB GbE Family Controller)</DeviceDesc>
+						<DeviceName>\DEVICE\{385A424E-BD8F-4165-A3B7-F2B5E208ACE1}</DeviceName>
+						<DeviceData>00e04c126558</DeviceData>
+					</Pnp>
+				</AddressInfo>
+				<Image Id="1" AddrType="9" ImageType="3">
+					<Name>过程映像</Name>
+				</Image>
+				<Box Id="1" BoxType="9099" BoxFlags="#x00000020">
+					<Name>节点 1 (PIC32 EtherCAT Slave)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0e80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="35" EoeType="1" FoeType="1" VendorId="#x00000001" ProductCode="#x00009252" RevisionNo="#x00000001" InfoDataAddr="true" TimeoutStateChange1="2000" TimeoutStateChange2="9000" TimeoutMailbox2="2000" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="PIC32 EtherCAT Slave" Desc="PIC32 EtherCAT Slave" PortABoxInfo="#x00ffffff">
+						<SyncMan>001080002600010001000000220000018000001026010000</SyncMan>
+						<SyncMan>801080002200010002000000220000018000801022010000</SyncMan>
+						<SyncMan>001110006400010003000000000000001000001164010000</SyncMan>
+						<SyncMan>001410002000010004000000000000001000001420010000</SyncMan>
+						<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+						<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<Pdo Name="sTXPDOinput process data mapping" Index="#x1a00" Flags="#x0011" SyncMan="3">
+							<Entry Name="swtich1" Index="#x6000" Sub="#x01">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="swtich2" Index="#x6000" Sub="#x02">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="swtich3" Index="#x6000" Sub="#x03">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="swtich4" Index="#x6000" Sub="#x04">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="swtich5" Index="#x6000" Sub="#x05">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="swtich6" Index="#x6000" Sub="#x06">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="swtich7" Index="#x6000" Sub="#x07">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="swtich8" Index="#x6000" Sub="#x08">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="sRXPDOoutput process data mapping" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+							<Entry Name="led1" Index="#x7000" Sub="#x01">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="led2" Index="#x7000" Sub="#x02">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="led3" Index="#x7000" Sub="#x03">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="led4" Index="#x7000" Sub="#x04">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="led5" Index="#x7000" Sub="#x05">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="led6" Index="#x7000" Sub="#x06">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="led7" Index="#x7000" Sub="#x07">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="led8" Index="#x7000" Sub="#x08">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<CoeProfile ProfileNo="5001"/>
+					</EtherCAT>
+				</Box>
+				<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="2" MaxSwitchFrames="120"/>
+			</Device>
+		</Io>
+	</Project>
+</TcSmProject>
